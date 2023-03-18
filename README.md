@@ -10,6 +10,8 @@
 <img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="50" height="50"/>
 <img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="50" height="50"/>
 
+<br>
+<br>
 
 # Instalação
  - Clone este repositório em sua máquina local.
