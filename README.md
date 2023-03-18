@@ -1,5 +1,15 @@
 # Cadastro de Currículos
- - Este é um repositório contendo um sistema web para cadastro de currículos utilizando as tecnologias HTML, CSS, PHP e MySQL.
+ - Este é um repositório contendo um sistema web para cadastro de currículos
+ como forma de prática aos estudos da faculdade de análise e desenvolvimento de sistemas.
+ 
+ 
+## 🛠️ Construído com
+
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="50" height="50"/>
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"  width="50" height="50"/>
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="50" height="50"/>
+<img align="left" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="50" height="50"/>
+
 
 # Instalação
  - Clone este repositório em sua máquina local.
