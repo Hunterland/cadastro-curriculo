@@ -1,0 +1,27 @@
+/* GERADOR DE CURRICULO */
+
+body {
+  background-color: #6495ed;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ff4500;
+  text-shadow: -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000,
+    1px 0px 0px #000;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30fr 5fr 5fr 6fr;
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+}

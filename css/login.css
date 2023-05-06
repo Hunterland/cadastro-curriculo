@@ -1,0 +1,148 @@
+/* TELA DE LOGIN */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* CONTAINER 1 - IMAGEM */
+.left-container {
+  flex: 1;
+  background-color: #ccc;
+  background-image: url("../img/bg_1.png");
+  background-size: cover;
+  background-position: center 50%;
+}
+
+/* CONTAINER 2 - FORMLOGIN */
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CAIXA DO LOGIN */
+.box-container {
+  background: linear-gradient(
+    180deg,
+    #0080ac 39.06%,
+    rgba(8, 106, 140, 0.51) 100%
+  );
+  border-radius: 3px;
+  padding: 20px;
+  /* width: 50%;
+  height: 62%; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+}
+
+/* LOGO GEP */
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+	margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #114880;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d2c3d;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* MODAL - ALERT */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
