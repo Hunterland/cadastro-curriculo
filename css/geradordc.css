@@ -18,10 +18,3 @@ img {
   height: 150px;
 }
 
-.wrapper {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 30fr 5fr 5fr 6fr;
-  grid-template-rows: 100px;
-  grid-gap: 10px;
-}
