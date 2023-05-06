@@ -9,17 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     
-     <!-- FOLHA DE ESTILO -->
+    <!-- FOLHA DE ESTILO -->
 	<link rel="stylesheet" type="text/css" href="./css/login.css">
 </head>
 <!-- VERIFICA SE O USUÁRIO JÁ ESTÁ LOGADO -->
 <?php
-session_start();
+ session_start();
 
-if(isset($_SESSION['username']) && $_SESSION['username'] != null) {
-    header('Location: index.php');
-    exit;
-}
+    if(isset($_SESSION['username']) && $_SESSION['username'] != null) {
+        header('Location: index.php');
+        exit;
+    }
+    
+    // VERIFICA SE O USUÁRIO FOI CADASTRADO COM SUCESSO!
+    if (isset($_SESSION['cadastro_sucesso']) && $_SESSION['cadastro_sucesso']) {
+        echo "<script type='text/javascript'>alert('Usuário cadastrado com sucesso!');</script>";
+        unset($_SESSION['cadastro_sucesso']); 
+        // Limpa a variável de sessão após exibir o alerta
+    }
+
 ?>
 
 <!-- VERIFICAÇÃO DE USUÁRIO -->
@@ -58,10 +66,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         <div class="right-container">
             <div class="box-container">
                 <img src="./img/gep_logo1.png" alt="logo" class="logo">
-                <h1>Login</h1>
-                <?php if (isset($_GET['erro']) && $_GET['erro'] == 'true'): ?>
-                <div class="error-message">Usuário e/ou senha incorretos. Por favor, tente novamente.</div>
-                <?php endif; ?>
+                <h1>Login</h1>        
+                <!-- exibe mensagem de erro caso o usuário estiver incorreto ou não exista. -->
+                <?php
+                    if (isset($_GET['erro']) && $_GET['erro'] == 'true') {
+                        echo "<script type='text/javascript'>window.onload = function() { alert('Usuário e/ou senha incorretos. Por favor, tente novamente.'); }</script>";
+                    }
+                ?>
                 <form method="post" action="login.php">
                     <input type="text" id="username" name="username" placeholder="Username" required>
                     <input type="password" id="password" name="password" placeholder="Password" required>

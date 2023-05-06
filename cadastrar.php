@@ -2,27 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- METADADOS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <style>
-        .dados {
-            width: 200px;
-            height: 25px;
-            box-sizing: border-box;
-            margin: 10px;
-        }
-
-        .resumo {
-            width: 600px;
-            height: 50px;
-            box-sizing: border-box;
-            margin: 10px;
-        }
-    </style>
-
+    <!-- TITULO -->
+    <title>Perfil - Curriculo</title>
+    
+    <!-- FOLHA DE ESTILO -->
+    <link rel="stylesheet" href="./css/cadastrar.css">
 </head>
 
 <body>

@@ -23,7 +23,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['username']) && $_SESSION['username'] != null)  {
+if(isset($_SESSION['Username']) && $_SESSION['Password'] != "")  {
 	header('Location: login.php');
 	exit;
 }
